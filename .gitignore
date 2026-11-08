@@ -1,0 +1,25 @@
+# Byte-compiled / packaging
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# kdb+/q licenses, binary logs, and splayed HDB data partitions
+kc.lic
+k4.lic
+kdb_database/hdb/*
+!kdb_database/hdb/.gitkeep
+kdb_database/tplog/*
+!kdb_database/tplog/.gitkeep
+
+# Raw data & MLflow artifacts
+data/raw/*
+!data/raw/.gitkeep
+data/sample_fixtures/*
+!data/sample_fixtures/.gitkeep
+mlops/mlruns/*
+!mlops/mlruns/.gitkeep
+
+# Keep all .gitkeep files across the repo
+!.gitkeep
